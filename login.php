@@ -15,7 +15,17 @@
             <input type="password" name="pass" placeholder="Password">
             <input type="submit" name="submit" value="Login">
         </form>
+        <?php
+        if (isset($_POST['submit'])) {
+            include 'koneksi.php';
 
+            $user = $_POST['user'];
+            $pass = $_POST['pass'];
+
+            $sql = mysqli_query($conn, "SELECT*FROM tb_admin WHERE username='" . $user . "' AND password = '" . MD5($pass) . "'");
+            echo mysqli_num_rows($sql);
+        }
+        ?>
     </div>
 </body>
 
