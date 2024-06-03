@@ -23,7 +23,15 @@
             $pass = $_POST['pass'];
 
             $sql = mysqli_query($conn, "SELECT*FROM tb_admin WHERE username='" . $user . "' AND password = '" . MD5($pass) . "'");
-            echo mysqli_num_rows($sql);
+
+            if (mysqli_num_rows($sql) > 0) {
+                session_start();
+                $_SESSION['username'] = $user;
+                header("Location:dashboard.php");
+                exit();
+            } else {
+                echo "<p> Username Atau Password Anda Salah </p>";
+            }
         }
         ?>
     </div>
