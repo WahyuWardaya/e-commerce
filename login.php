@@ -17,7 +17,7 @@
         </form>
         <?php
         if (isset($_POST['submit'])) {
-            include 'koneksi.php';
+            include 'connection/conn.php';
 
             $user = $_POST['user'];
             $pass = $_POST['pass'];
