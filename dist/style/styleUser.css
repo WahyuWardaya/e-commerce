@@ -1,23 +1,47 @@
-html, body {
-    height: 100%;
-    margin: 0;
+
+
+.box {
+    position: relative !important; 
+    width: 146px !important;
+    height: 153px !important;
+    border: 1px solid #ddd  !important;
+    margin: 10px !important;
+    overflow: hidden !important;
 }
 
-body {
-    display: flex;
-    flex-direction: column;
+.overlay {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
-.main-content {
-    flex: 1;
+.box-image {
+    width: 100% !important;
+    height: 100px !important;
+    object-fit: cover !important;
 }
 
-footer {
-    position: sticky;
-    bottom: 0;
-    width: 100%;
-    background-color: #343a40;
-    color: white;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+
+.title {
+    position: absolute !important;
+    top: 50% !important;
+    left: 50%   !important;
+    transform: translate(-50%, -50%) !important;
+    color: white !important;
+    margin: 0 !important;
+}
+
+.dark-bg {
+    background-color: #343a40 !important; 
+    color: #fff !important; 
+}
+
+@media (max-width: 320px) {
+    .box {
+        width: 110px !important;
+        height: 123px !important;
+    }
 }
