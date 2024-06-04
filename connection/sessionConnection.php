@@ -6,12 +6,8 @@ if (session_status() === PHP_SESSION_NONE) {
 require_once 'conn.php';
 
 if (isset($_SESSION['username'])) {
-  $id_admin = $_SESSION['idadmin'];
   $username = $_SESSION['username'];
   $conn = getConnection();
-
 } else {
   header("Location: login.php");
 }
-
-?>

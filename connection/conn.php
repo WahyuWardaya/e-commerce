@@ -1,5 +1,6 @@
 <?php
-function getConnection() {
+function getConnection()
+{
     $servername = "localhost";
     $username = "root";
     $password = "";
@@ -16,4 +17,4 @@ function getConnection() {
     // Export the connection for use in other files
     return $conn;
 }
-?>
+$conn = getConnection();
