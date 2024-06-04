@@ -6,11 +6,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav ms-auto">
-                <a class="nav-link active" aria-current="page" href="dashboard.php">Home</a>
-                <a class="nav-link active" aria-current="page" href="#">Tambah Kategori</a>
-                <a class="nav-link active" aria-current="page" href="#">Tambah Produk</a>
-                <a class="nav-link active" aria-current="page" href="profile.php">Profile</a>
-                <a class="nav-link active" aria-current="page" href="logout.php">Logout</a>
+                <a class="nav-link active" aria-current="page" href="/e-commerce/dashboard.php">Home</a>
+                <a class="nav-link active" aria-current="page" href="/e-commerce/adm_kategori/kategori.php">Data Kategori</a>
+                <a class="nav-link active" aria-current="page" href="#">Data Produk</a>
+                <a class="nav-link active" aria-current="page" href="/e-commerce/profile.php">Profile</a>
+                <a class="nav-link active" aria-current="page" href="/e-commerce/logout.php">Logout</a>
             </div>
         </div>
     </div>

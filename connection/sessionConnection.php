@@ -1,3 +1,3 @@
 <?php
 session_start();
-require 'connection/conn.php';
+require 'conn.php';
