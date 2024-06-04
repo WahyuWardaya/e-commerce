@@ -4,24 +4,24 @@
             <!-- Company Info -->
             <div class="col-md-4">
                 <h5>Toko Baju</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non nulla quis leo tristique dapibus.</p>
+                <p>At Toko Baju, we are dedicated to bringing you the latest in fashion trends at affordable prices. Our collection features a wide range of styles for men, women, and children, ensuring that you find the perfect outfit for every occasion. We pride ourselves on offering high-quality clothing that combines comfort and style..</p>
             </div>
             <!-- Quick Links -->
             <div class="col-md-2">
                 <h5>Quick Links</h5>
                 <ul class="list-unstyled">
-                    <li><a href="index.html" class="text-white">Home</a></li>
-                    <li><a href="product.html" class="text-white">Man</a></li>
-                    <li><a href="about.html" class="text-white">Women</a></li>
-                    <li><a href="contact.html" class="text-white">Kids</a></li>
-                    <li><a href="contact.html" class="text-white">Accessories</a></li>
+                    <li><a href="#" class="text-white">Home</a></li>
+                    <li><a href="#" class="text-white">Man</a></li>
+                    <li><a href="#" class="text-white">Women</a></li>
+                    <li><a href="#" class="text-white">Kids</a></li>
+                    <li><a href="#" class="text-white">Accessories</a></li>
                 </ul>
             </div>
             <!-- Contact Info -->
             <div class="col-md-3">
                 <h5>Contact Us</h5>
-                <p><i class="fas fa-map-marker-alt"></i> 123 Street, City, Country</p>
-                <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                <p><i class="fas fa-map-marker-alt"></i> Undiknas University</p>
+                <p><i class="fas fa-phone"></i> +628990567874</p>
                 <p><i class="fas fa-envelope"></i> info@tokobaju.com</p>
             </div>
             <!-- Social Media Links -->

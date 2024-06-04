@@ -1,5 +1,7 @@
 <?php
+session_start();
 include 'connection/conn.php';
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,7 +23,6 @@ include 'connection/conn.php';
 
 <!-- Main content -->
 <div class="main-content">
-    <!-- Carousel Container with specified width -->
     <div class="carousel-container mt-5" style="max-width: 1140px; margin: 0 auto;">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
@@ -55,7 +56,7 @@ include 'connection/conn.php';
         </div>
     </div>
 
-    <h2 class="text-center my-4 mt-5">Filter berdasarkan ukuran</h2>
+    <h2 class="text-center my-4 mt-5">Filtered based on Sizes</h2>
 
     <div class="category-selection text-center my-4">
         <button class="btn btn-light m-2" onclick="filterProducts('All')">All Size</button>
@@ -95,63 +96,63 @@ include 'connection/conn.php';
         </div>
     </div>
 
-    <h2 class="text-center my-2 mt-5">Kamu Mau Kemana?</h2>
-    <p class="text-center">Yuk kita bantu pilih outfit sesuai tujuanmu!</p>
+    <h2 class="text-center my-2 mt-5">Where are you goin?</h2>
+    <p class="text-center">Let us help you to choose your outfit based on where you going!</p>
 
-<!-- Box Grid -->
+
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                <a href="link_6.html" class="box-link">
+                <a href="#" class="box-link">
                     <div class="box text-center" style="position: relative; width: 146px; height: 153px; border: 1px solid #ddd; margin: 10px;">
                         <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
                         <img src="dist/img/img_user/card-work.jpg" alt="Box 6" style="width: 100%; height: 100%; object-fit:cover; object-position: 50% 10%;">
-                        <p class="title" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; margin: 0;">Baju Kerja</p>
+                        <p class="title" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; margin: 0;">Work Outfit</p>
                     </div>
                 </a>
             </div>
             <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                <a href="link_6.html" class="box-link">
+                <a href="#" class="box-link">
                     <div class="box text-center" style="position: relative; width: 146px; height: 153px; border: 1px solid #ddd; margin: 10px;">
                         <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
                         <img src="dist/img/img_user/card-sport.jpg" alt="Box 6" style="width: 100%; height: 100%; object-fit:cover; object-position: 50% 5%;">
-                        <p class="title" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; margin: 0;">Pakaian Olahraga</p>
+                        <p class="title" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; margin: 0;">Exercise Outfit</p>
                     </div>
                 </a>
             </div>
             <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                <a href="link_6.html" class="box-link">
+                <a href="#" class="box-link">
                     <div class="box text-center" style="position: relative; width: 146px; height: 153px; border: 1px solid #ddd; margin: 10px;">
                         <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
                         <img src="dist/img/img_user/card-casual.jpg" alt="Box 6" style="width: 100%; height: 100%; object-fit:cover; object-position: 50% 10%;">
-                        <p class="title" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; margin: 0;">Casual</p>
+                        <p class="title" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; margin: 0;">Casual Outfit</p>
                     </div>
                 </a>
             </div>
             <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                <a href="link_6.html" class="box-link">
+                <a href="#" class="box-link">
                     <div class="box text-center" style="position: relative; width: 146px; height: 153px; border: 1px solid #ddd; margin: 10px;">
                         <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
                         <img src="dist/img/img_user/card-muslim.jpg" alt="Box 6" style="width: 100%; height: 100%; object-fit:cover;">
-                        <p class="title" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; margin: 0;">Baju Muslim</p>
+                        <p class="title" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; margin: 0;">Muslimic Outfit</p>
                     </div>
                 </a>
             </div>
             <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                <a href="link_6.html" class="box-link">
+                <a href="#" class="box-link">
                     <div class="box text-center" style="position: relative; width: 146px; height: 153px; border: 1px solid #ddd; margin: 10px;">
                         <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
                         <img src="dist/img/img_user/card-party.jpg" alt="Box 6" style="width: 100%; height: 100%; object-fit:cover;">
-                        <p class="title" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; margin: 0;">Baju Pesta</p>
+                        <p class="title" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; margin: 0;">Party Outfit</p>
                     </div>
                 </a>
             </div>
             <div class="col-6 col-sm-4 col-md-3 col-lg-2">
-                <a href="link_6.html" class="box-link">
+                <a href="#" class="box-link">
                     <div class="box text-center" style="position: relative; width: 146px; height: 153px; border: 1px solid #ddd; margin: 10px;">
                         <div class="overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
                         <img src="dist/img/img_user/card-beach.jpg" alt="Box 6" style="width: 100%; height: 100%; object-fit:cover;">
-                        <p class="title" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; margin: 0;">Baju Pantai</p>
+                        <p class="title" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); color: white; margin: 0;">Beach Outfit</p>
                     </div>
                 </a>
             </div>
