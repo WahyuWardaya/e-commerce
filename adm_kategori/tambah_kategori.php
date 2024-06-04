@@ -26,7 +26,7 @@
             <div class="box">
                 <form action="" method="POST">
                     <input type="text" name="nama" placeholder="Nama Kategori" class="input-control" required>
-                    <input type="submit" name="submit" value="Update">
+                    <input type="submit" name="submit" value="Tambah">
                 </form>
                 <?php
                 if (isset($_POST['submit'])) {
