@@ -16,4 +16,5 @@ function getConnection() {
     // Export the connection for use in other files
     return $conn;
 }
+$conn = getConnection();
 ?>

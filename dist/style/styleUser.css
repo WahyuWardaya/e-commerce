@@ -1,0 +1,86 @@
+/* Css Imports */
+@import url("dist/fonts/segoe/style.css");
+
+
+
+
+:root{
+    --font-segoe: "Segoe UI Regular";
+
+    --primary-color: rgb(rgb(241, 241, 241));
+    --secondary-color: rgb(19, 20, 20);
+
+    --gray-400: rgba(163, 163, 163, 0.234);
+    --gray-400-hover: rgba(163, 163, 163, 0.436);
+    --gray-500: #5E6971;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--primary-color);
+    font-family: var(--font-segoe);
+}
+
+.container{
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem
+}
+
+h1,h2,h3,h4,h5,
+p,span,a{
+    color: var(--color-black);
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1280px){
+
+}
+
+@media (max-width: 1024px){
+
+
+
+}
+
+@media (max-width: 768px){
+    
+}
+
+@media (max-width: 640px){
+   
+}
+
+@media (max-width: 475px){
+   
+}
+
+/* Special Media */
+
+@media (max-width: 320px){
+
+}
+
+
+
