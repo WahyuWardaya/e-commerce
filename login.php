@@ -16,21 +16,28 @@
             <input type="submit" name="submit" value="Login">
         </form>
         <?php
+        require 'connection/sessionConnection.php';
+
         if (isset($_POST['submit'])) {
-            include 'connection/conn.php';
+            $username = $_POST['user'];
+            $password = md5($_POST['pass']); // Encrypt password with MD5
 
-            $user = $_POST['user'];
-            $pass = $_POST['pass'];
+            // Query untuk memeriksa username dan password
+            $sql = "SELECT idadmin, username FROM tb_admin WHERE username = '$username' AND password = '$password'";
+            $result = $conn->query($sql);
 
-            $sql = mysqli_query($conn, "SELECT*FROM tb_admin WHERE username='" . $user . "' AND password = '" . MD5($pass) . "'");
+            if ($result->num_rows > 0) {
+                $row = $result->fetch_assoc();
 
-            if (mysqli_num_rows($sql) > 0) {
-                session_start();
-                $_SESSION['username'] = $user;
-                header("Location:dashboard.php");
+                // Menyimpan data ke sesi
+                $_SESSION['login'] = true;
+                $_SESSION['idadmin'] = $row['idadmin'];
+                $_SESSION['username'] = $row['username'];
+
+                header("Location: dashboard.php"); // Redirect ke halaman dashboard
                 exit();
             } else {
-                echo "<p> Username Atau Password Anda Salah </p>";
+                echo "Username atau password salah!";
             }
         }
         ?>
