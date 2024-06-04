@@ -12,9 +12,9 @@ if ($conn->connect_error) {
 
 // SQL query to fetch tb_products based on the size
 if ($size == 'All') {
-    $sql = "SELECT * FROM tb_product ORDER BY RAND() LIMIT 6";
+    $sql = "SELECT * FROM tb_product";
 } else {
-    $sql = "SELECT * FROM tb_product WHERE product_size = '$size' ORDER BY RAND() LIMIT 6";
+    $sql = "SELECT * FROM tb_product WHERE product_size = '$size'";
 }
 $result = $conn->query($sql);
 
