@@ -45,7 +45,7 @@
                                 <a class="btn btn-warning" href="../adm_kategori/update_kategori.php?id=<?php echo $row['idcategory'] ?>">
                                     Edit
                                 </a>
-                                <a class="btn btn-danger" href="../adm_kategori/hapus_kategori.php?id=<?php echo $row['idcategory'] ?>" onclick="return confirm('Yakin Menghapus Kategori Ini!?')">
+                                <a class="btn btn-danger" href="../hapus_data.php?id=<?php echo $row['idcategory'] ?>" onclick="return confirm('Yakin Menghapus Kategori Ini!?')">
                                     Hapus
                                 </a>
                             </td>

@@ -8,7 +8,7 @@
             <div class="navbar-nav ms-auto">
                 <a class="nav-link active" aria-current="page" href="/e-commerce/dashboard.php">Home</a>
                 <a class="nav-link active" aria-current="page" href="/e-commerce/adm_kategori/kategori.php">Data Kategori</a>
-                <a class="nav-link active" aria-current="page" href="#">Data Produk</a>
+                <a class="nav-link active" aria-current="page" href="/e-commerce/adm_produk/produk.php">Data Produk</a>
                 <a class="nav-link active" aria-current="page" href="/e-commerce/profile.php">Profile</a>
                 <a class="nav-link active" aria-current="page" href="/e-commerce/logout.php">Logout</a>
             </div>
