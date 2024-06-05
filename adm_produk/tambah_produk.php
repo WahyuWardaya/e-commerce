@@ -81,11 +81,12 @@ include '../connection/sessionConnection.php' ?>
                         echo '<script>alert("fromat file tidak diIzinkan")</script)';
                     } else {
                         // proses upload dan insert ke database jika format dalam array sudah diIzinkan
-                        move_uploaded_file($tmp_name, '../img_produk/' . $newname);
+                        move_uploaded_file($tmp_name, '../dist/img/img_user/' . $newname);
 
                         $insert = mysqli_query($conn, "INSERT INTO tb_product (idcategory, product_name, product_price, product_description, product_image, product_status, product_size) VALUES ('$kategori', '$nama', '$harga', '$deskripsi', '$newname', '$status', '$size')");
                         if ($insert) {
                             echo 'simpan data berhasil';
+                            echo '<script>window.location="adm_produk/produk.php"</script>';
                         } else {
                             echo 'gagal' . mysqli_error($conn);
                         }

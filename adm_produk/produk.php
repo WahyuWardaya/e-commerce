@@ -51,14 +51,14 @@
                                 <td><?php echo $row['category_name'] ?></td>
                                 <td><?php echo $row['product_name'] ?></td>
                                 <td><?php echo $row['product_price'] ?></td>
-                                <td><a href="../dist/img/img_user/<?php echo $row['product_image'] ?>" target="_blank"><img src="../dist/img/img_user/<?php echo $row['product_image'] ?>" width="100px"></a></td>
+                                <td><img src="../dist/img/img_user/<?php echo $row['product_image'] ?>" width="100px"></td>
                                 <td><?php echo $row['product_size'] ?></td>
                                 <td><?php echo $row['product_status'] ?></td>
                                 <td>
-                                    <a class="btn btn-warning" href="../adm_produk/update_produk.php?id=<?php echo $row['idproduct'] ?>">
+                                    <a class="btn btn-warning" href="../adm_produk/update_produk.php?idProduk=<?php echo $row['idproduct'] ?>">
                                         Edit
                                     </a>
-                                    <a class="btn btn-danger" href="../hapus_data.php?id=<?php echo $row['idproduct'] ?>" onclick="return confirm('Yakin Menghapus Kategori Ini!?')">
+                                    <a class="btn btn-danger" href="../hapus_data.php?idProduk=<?php echo $row['idproduct'] ?>" onclick="return confirm('Yakin Menghapus Kategori Ini!?')">
                                         Hapus
                                     </a>
                                 </td>

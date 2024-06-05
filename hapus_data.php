@@ -6,7 +6,7 @@ if ($conn) {
         echo '<script>window.location="../e-commerce/adm_kategori/kategori.php"</script>';
     }
 
-    if (isset($_GET['id'])) {
+    if (isset($_GET['idProduk'])) {
         $produk = mysqli_query($conn, "SELECT product_image FROM tb_product WHERE idproduct = '" . $_GET['id'] . "'");
         $p = mysqli_fetch_object($produk);
 
