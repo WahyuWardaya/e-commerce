@@ -27,7 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
             $sql = "INSERT INTO tb_user (username, password, email, first_name, last_name) VALUES ('$username', '$password', '$email', '$first_name', '$last_name')";
             if ($conn->query($sql) === TRUE) {
-                $success = "Registration successful. You can now <a href='login.php'>login</a>.";
+                $success = "Registration successful. You can now <a href='loginUser.php'>login</a>.";
             } else {
                 $error = "Error: " . $sql . "<br>" . $conn->error;
             }
@@ -40,12 +40,14 @@ $conn->close();
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
+
 <body>
     <div class="container">
         <div class="row justify-content-center mt-5">
@@ -55,10 +57,10 @@ $conn->close();
                         <h3 class="text-center">Register</h3>
                     </div>
                     <div class="card-body">
-                        <?php if($error): ?>
+                        <?php if ($error) : ?>
                             <div class="alert alert-danger"><?php echo $error; ?></div>
                         <?php endif; ?>
-                        <?php if($success): ?>
+                        <?php if ($success) : ?>
                             <div class="alert alert-success"><?php echo $success; ?></div>
                         <?php endif; ?>
                         <form method="POST" action="">
@@ -97,4 +99,5 @@ $conn->close();
         </div>
     </div>
 </body>
+
 </html>

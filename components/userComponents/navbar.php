@@ -27,13 +27,13 @@
             </ul>
             <div class="navbar-nav">
                 <a class="nav-item nav-link" href="cart.html"><i class="fas fa-shopping-cart fa-lg mr-2"></i></a>
-                <?php if(isset($_SESSION['username'])): ?>
+                <?php if (isset($_SESSION['username'])) : ?>
                     <p class="lead text-white mt-1 mb-0">Hello, <span class="font-weight-bold"><?php echo htmlspecialchars($_SESSION['username']); ?></span>!</p>
-                    <a class="btn btn-danger mt-1 ml-2" style="height: 40px;" href="logout.php"><i class="fas fa-sign-out-alt fa-lg"></i> Logout</a>
-                <?php else: ?>
-                <a class="btn btn-success" href="login.php"><i class="fas fa-user fa-lg "></i> Masuk / Daftar</a>
+                    <a class="btn btn-danger mt-1 ml-2" style="height: 40px;" href="logoutUser.php"><i class="fas fa-sign-out-alt fa-lg"></i> Logout</a>
+                <?php else : ?>
+                    <a class="btn btn-success" href="loginUser.php"><i class="fas fa-user fa-lg "></i> Masuk / Daftar</a>
                 <?php endif; ?>
-                
+
             </div>
         </div>
     </div>
